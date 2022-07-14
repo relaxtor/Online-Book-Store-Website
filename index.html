@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- FONTAWESOME CDN CSS-FILE LINK -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <!-- CUSTOM CSS-FILE LINK -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css" />
     <title>Online Book Store Website</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- HEADER section start -->
+    <header class="header">
+      <div class="header-top">
+        <a href="/" class="logo">
+            <i class="fa-solid fa-book"></i> bookly
+        </a>
 
+        <form action="#" class="search-form">
+          <input
+            type="search"
+            name="search"
+            class="search-box"
+            data-search-box
+            placeholder="search here..."
+          />
+          <label for="search-box" class="label-search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </label>
+        </form>
 
+        <div class="icons">
+          <div class="search-btn fa-solid fa-magnifying-glass" data-search-btn></div>
+          <a href="#" class="fa-solid fa-heart"></a>
+          <a href="#" class="fa-solid fa-cart-shopping"></a>
+          <div class="login-btn fa-solid fa-user" data-login-btn></div>
+        </div>
 
-
-
-
-
-
-
-
-
-
+      </div>
+    </header>
+    <!-- HEADER section ends -->
 
     <!-- CUSTOM JS-FILE LINK -->
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
