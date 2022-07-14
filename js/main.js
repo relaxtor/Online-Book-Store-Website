@@ -8,4 +8,15 @@ window.addEventListener('scroll', function() {
     } else {
         headerFix.classList.remove('active');
     }
+
+    searchForm.classList.remove('active');
+});
+
+// Transition search-form
+const searchForm = document.querySelector('[data-search-form]');
+const searchButton = document.querySelector('[data-search-btn]');
+
+searchButton.addEventListener('click', function() {
+    this.classList.toggle('fa-xmark');
+    searchForm.classList.toggle('active');
 });

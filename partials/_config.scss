@@ -50,3 +50,30 @@ body {
 .container {
     padding: 1.5rem 9%;
 }
+
+// Media quries
+
+@media (max-width: 1023.99px) {
+    html {
+        font-size: 60%;
+    }
+    .container {
+        padding: 1.5rem 2%;
+    }
+}
+
+@media (max-width: 767.99px) {
+    html {
+        font-size: 55%;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 449.99px) {
+    html {
+        font-size: 50%;
+    }
+}

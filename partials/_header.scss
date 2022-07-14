@@ -65,6 +65,11 @@
             .search-btn {
                 display: none;
                 margin-left: 0;
+
+                &.fa-xmark {
+                    width: 2.2rem;
+                    transform: rotate(-180deg);
+                }
             }
         }
     }
@@ -96,4 +101,54 @@
             }
         }
     }
+}
+
+
+
+// Media quries
+
+@media (max-width: 1023.99px) {
+    
+}
+
+@media (max-width: 767.99px) {
+    .header {
+
+        .header-top {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: $boxShadow;
+
+            .search-form {
+                position: absolute;
+                width: 99%;
+                top: -105%;
+                right: 0;
+                left: 0;
+                z-index: -1;
+                margin-inline: auto;
+
+                &.active {
+                    top: 105%;
+                    box-shadow: $boxShadow;
+                }
+            }
+
+            .icons {
+                .search-btn {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .header-bottom {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 424.99px) {
+    
 }
