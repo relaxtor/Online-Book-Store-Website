@@ -1,0 +1,20 @@
+{
+    "editor.wordWrap": "on",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "editor.fontSize": 16,
+    "explorer.confirmDelete": false,
+    "editor.formatOnSave": true,
+    "liveSassCompile.settings.excludeList": [
+        "/**/node_modules/**",
+        "/.vscode/**"
+    ],
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/css"
+        }
+    ],
+    "liveSassCompile.settings.generateMap": true,
+    "workbench.iconTheme": "vscode-icons"
+}
