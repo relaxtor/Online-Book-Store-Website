@@ -1,7 +1,7 @@
 {
     "editor.wordWrap": "on",
     "workbench.colorTheme": "Visual Studio Dark",
-    "editor.fontSize": 16,
+    "editor.fontSize": 18,
     "explorer.confirmDelete": false,
     "editor.formatOnSave": true,
     "liveSassCompile.settings.excludeList": [
