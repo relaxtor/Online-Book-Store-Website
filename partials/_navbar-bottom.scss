@@ -1,0 +1,22 @@
+.navbar-bottom {
+    text-align: center;
+    background-color: $green;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+
+    .navbar-bottom-link {
+        font-size: 2.5rem;
+        padding: 2rem;
+    }
+}
+
+// MEDIA QURIES
+
+@media (max-width: 767.99px) {
+    .navbar-bottom {
+        display: block;
+    }
+}

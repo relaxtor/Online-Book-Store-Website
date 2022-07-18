@@ -20,3 +20,18 @@ searchButton.addEventListener('click', function() {
     this.classList.toggle('fa-xmark');
     searchForm.classList.toggle('active');
 });
+
+// Login form open-close
+const loginForm = document.querySelector('[data-login-form]');
+const loginFormOpen = document.querySelector('[data-login-btn]');
+const loginFormClose = document.querySelector('[data-login-form-closemark]');
+
+loginFormOpen.addEventListener('click', function() {
+    loginForm.classList.add('active');
+    searchForm.classList.remove('active');
+    searchButton.classList.remove('fa-xmark');
+});
+
+loginFormClose.addEventListener('click', function() {
+    loginForm.classList.remove('active');
+});
