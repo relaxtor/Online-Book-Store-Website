@@ -1,6 +1,6 @@
 .icons-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 1.5rem;
     justify-items: center;
 
@@ -8,6 +8,7 @@
         display: flex;
         align-items: center;
         padding: 2rem 0;
+        margin-inline: auto;
 
         .fa-icon {
             font-size: 3.5rem;
@@ -18,10 +19,36 @@
             margin-left: 1.5rem;
 
             .icon-title {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
                 color: $black;
                 padding-bottom: 0.5rem;
             }
+
+            .icon-text {
+                font-size: 1.4rem;
+                color: $lightColor;
+            }
         }
+    }
+}
+
+// MEDIA QURIES
+@media (max-width: 1439.99px){
+    .icons-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1023.99px){}
+
+@media (max-width: 767.99px){
+    .icons-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 424.99px){
+    .icons-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
