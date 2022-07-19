@@ -1,0 +1,27 @@
+.icons-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 1.5rem;
+    justify-items: center;
+
+    .icons {
+        display: flex;
+        align-items: center;
+        padding: 2rem 0;
+
+        .fa-icon {
+            font-size: 3.5rem;
+            color: $green;
+        }
+
+        .icons-content {
+            margin-left: 1.5rem;
+
+            .icon-title {
+                font-size: 2.5rem;
+                color: $black;
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+}
