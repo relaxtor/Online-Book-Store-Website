@@ -1,0 +1,56 @@
+.newsletter {
+    background-image: url(../image/letter-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .newsletter-form {
+        max-width: 45rem;
+        margin-left: auto;
+        text-align: center;
+        padding: 5rem 0;
+
+        .newsletter-form-title {
+            font-size: 2.2rem;
+            color: $white;
+            padding-bottom: 0.7rem;
+            font-weight: normal;
+        }
+
+        .newsletter-form-input {
+            width: 100%;
+            margin: 0.7rem 0;
+            padding: 1rem 1.2rem;
+            font-size: 1.6rem;
+            text-transform: none;
+            color: $black;
+            border-radius: .5rem;
+        }
+    }
+}
+
+// MEDIA QURIES
+@media (max-width: 1023.99px) {}
+@media (max-width: 767.99px) {}
+@media (max-width: 424.99px) {
+    .newsletter {
+        background-position: right;
+
+        .newsletter-form {
+            width: 100%;
+            margin-inline: auto;
+        }
+    }
+}
+@media (max-width: 319.99px) {
+    .newsletter {
+
+        .newsletter-form {
+
+            input[type = "submit"] {
+                width: 100%;
+            }
+        }
+    }
+}

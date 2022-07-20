@@ -1,0 +1,104 @@
+.featured {
+    .featured-slider {
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            border: $borderHover;
+            border-radius: 50%;
+            width: 4rem;
+            height: 4rem;
+            color: $black;
+            background-color: $white;
+
+            &::after {
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
+            &:hover {
+                background-color: $black;
+                color: $white;
+            }
+        }
+
+        .wrapper {
+
+            .featured-box {
+                margin: 2rem 0;
+                position: relative;
+                overflow: hidden;
+                border: $border;
+                text-align: center;
+                box-shadow: $boxShadow;
+                border-radius: .5rem;
+
+                &:hover {
+                    border: $borderHover;
+                }
+
+                &:hover .featured-box-icons {
+                    transform: translateY(0rem);
+                }
+
+                &:hover .featured-box-image {
+                    transform: translateY(6rem);
+                }
+
+                .featured-box-icons {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 1;
+                    background-color: $white;
+                    border-bottom: $borderHover;
+                    transform: translateY(-6rem);
+
+                    .featured-box-icons-link {
+                        color: $black;
+                        font-size: 2.2rem;
+                        padding: 1.3rem 1.5rem;
+                        margin: 0;
+
+                        &:hover {
+                            background-color: $green;
+                            color: $white;
+                        }
+                    }
+                }
+
+                .featured-box-image {
+                    padding: 1rem;
+                    background: $linearGradient;
+                }
+
+                .featured-box-content {
+                    background-color: $lightWhite;
+                    padding: 1.5rem;
+
+                    .featured-box-content-title {
+                        font-size: 2rem;
+                        color: $black;
+                    }
+
+                    .featured-box-content-price {
+                        font-size: 2.2rem;
+                        color: $black;
+                        padding-top: 1rem;
+
+                        .featured-box-content-price-span {
+                            font-size: 1.5rem;
+                            color: $lightColor;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// MEDIA QURIES
+@media (max-width: 1023.99px){}
+@media (max-width: 767.99px){}
+@media (max-width: 424.99px){}
