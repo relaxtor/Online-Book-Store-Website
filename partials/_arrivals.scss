@@ -1,0 +1,55 @@
+.arrivals {
+
+    .arrivals-slider {
+
+        .arrivals-wrapper {
+
+            .arrivals-box-link {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 1.5rem;
+                align-items: center;
+                margin: 1rem 0;
+                padding: 2rem 3rem;
+                background-color: $white;
+                overflow: hidden;
+                border: $border;
+                border-radius: .5rem;
+                box-shadow: $boxShadow;
+
+                &:hover {
+                    border: $borderHover;
+                }
+
+                .arrivals-box-link-image {
+                    max-height: 25rem;
+                }
+
+                .arrivals-box-link-content {
+
+                    .arrivals-box-link-content-title {
+                        font-size: 2rem;
+                        color: $black;
+                    }
+
+                    .arrivals-box-link-content-price {
+                        font-size: 2.2rem;
+                        color: $black;
+                        padding-bottom: 0.5rem;
+
+                        .arrivals-box-link-content-price-span {
+                            font-size: 1.5rem;
+                            color: $lightColor;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// MEDIA QURIES
+@media (max-width: 1023.99px) {}
+@media (max-width: 767.99px) {}
+@media (max-width: 424.99px) {}

@@ -1,0 +1,40 @@
+.deal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+    background-color: $lightWhiteDeal;
+
+    .deal-content {
+
+        .deal-title {
+            color: $green;
+            font-size: 2.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .deal-content-text {
+            padding: 1rem 0;
+            font-size: 1.4rem;
+            line-height: 2;
+            color: $lightColor;
+        }
+    }
+}
+
+// MEDIA QURIES
+@media (max-width: 1023.99px) {}
+@media (max-width: 767.99px) {
+    .deal {
+        grid-template-columns: repeat(1, 1fr);
+
+        .deal-content {
+            text-align: center;
+        }
+
+        .deal-image-box {
+            margin-right: 6rem;
+        }
+    }
+}
+@media (max-width: 424.99px) {}

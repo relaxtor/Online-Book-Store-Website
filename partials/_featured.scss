@@ -1,27 +1,7 @@
 .featured {
     .featured-slider {
 
-        .swiper-button-next,
-        .swiper-button-prev {
-            border: $borderHover;
-            border-radius: 50%;
-            width: 4rem;
-            height: 4rem;
-            color: $black;
-            background-color: $white;
-
-            &::after {
-                font-size: 2rem;
-                font-weight: 600;
-            }
-
-            &:hover {
-                background-color: $black;
-                color: $white;
-            }
-        }
-
-        .wrapper {
+        .featured-wrapper {
 
             .featured-box {
                 margin: 2rem 0;

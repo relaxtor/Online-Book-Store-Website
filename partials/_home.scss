@@ -1,26 +1,14 @@
 .home {
-    background-image: url(../image/banner-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-inline: auto;
-    height: 81vh;
     display: grid;
     place-items: center;
 
-    .row {
+    .home-row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1.5rem;
         place-items: center;
 
-        .content {
-            max-width: auto;
-
-            .home-title {
-                color: $black;
-                font-size: 4.5rem;
-            }
+        .home-content {
 
             .home-text {
                 color: $lightColor;
@@ -31,12 +19,11 @@
         }
 
         .book-slider {
-            max-width: auto;
             text-align: center;
             margin-top: 2rem;
             margin-inline: auto;
 
-            .wrapper {
+            .book-wrapper {
 
                 .book-link {
                     display: inline-block;
@@ -65,15 +52,11 @@
     .home {
         height: 100%;
 
-        .row {
+        .home-row {
             grid-template-columns: repeat(1, 1fr);
 
-            .content {
+            .home-content {
                 text-align: center;
-
-                .home-title {
-                    font-size: 3rem;
-                }
             }
         }
     }
