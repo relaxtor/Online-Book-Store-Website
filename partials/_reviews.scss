@@ -10,7 +10,9 @@
                 text-align: center;
                 user-select: none;
                 border: $border;
+                border-radius: .5rem;
                 box-shadow: $boxShadow;
+                overflow: hidden;
 
                 &:hover {
                     border: $borderHover;

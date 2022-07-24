@@ -10,13 +10,13 @@ const swiperHome = new Swiper(".book-slider", {
     0: {
       slidesPerView: 1,
     },
-    425: {
+    768: {
       slidesPerView: 2,
     },
-    768: {
+    1024: {
       slidesPerView: 3,
     },
-    1024: {
+    1440: {
       slidesPerView: 4,
     },
   },
@@ -39,13 +39,13 @@ const swiperFeatured = new Swiper(".featured-slider", {
     0: {
       slidesPerView: 1,
     },
-    425: {
+    768: {
       slidesPerView: 2,
     },
-    768: {
+    1024: {
       slidesPerView: 3,
     },
-    1024: {
+    1440: {
       slidesPerView: 4,
     },
   },
@@ -74,6 +74,9 @@ const swiperArrivals = new Swiper(".arrivals-slider", {
     1024: {
       slidesPerView: 3,
     },
+    1440: {
+      slidesPerView: 4,
+    },
   },
 });
 
@@ -100,6 +103,39 @@ const swiperReviews = new Swiper(".reviews-slider", {
     },
     1024: {
       slidesPerView: 3,
+    },
+    1440: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+// SWIPER BLOGS SLIDE
+const swiperBlogs = new Swiper(".blogs-slider", {
+  spaceBetween: 10,
+  loop: true,
+  grabCursor: true,
+  centeredSlide: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+      delay: 9500,
+      disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+    1440: {
+      slidesPerView: 4,
     },
   },
 });

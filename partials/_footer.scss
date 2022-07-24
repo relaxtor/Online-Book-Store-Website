@@ -1,0 +1,121 @@
+.footer {
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1.5rem;
+
+        .footer-container-box {
+
+            .footer-container-box-title {
+                font-size: 2.2rem;
+                color: $black;
+                padding: 1rem 0;
+            }
+
+            .footer-container-box-link {
+                display: block;
+                width: fit-content;
+                margin: 1rem 0;
+                padding: 0.5rem 0;
+                font-size: 1.4rem;
+                color: $lightColor;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                &:hover .fa-solid {
+                    padding-right: 2rem;
+                }
+                
+                .fa-solid {
+                    padding-right: 1rem;
+                    color: $green;
+                }
+                
+            }
+
+            .footer-email {
+                text-transform: none;
+            }
+
+            .footer-container-box-image {
+                height: fit-content;
+            }
+        }
+    }
+
+    .footer-share-social {
+        margin-top: 1.5rem;
+        padding: 1rem 0;
+        text-align: center;
+        
+        .footer-share-social-link {
+            margin: 0 0.3rem;
+            width: 5rem;
+            height: 5rem;
+            line-height: 5rem;
+            font-size: 2rem;
+            color: $white;
+            border-radius: 50%;
+            background-color: $green;
+
+            &:hover {
+                background-color: $black;
+            }
+        }
+    }
+
+    .footer-credit {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: $border;
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: 500;
+        letter-spacing: .5rem;
+        color: $black;
+
+        .footer-credit-span {
+            text-transform: uppercase;
+            color: $green;
+        }
+    }
+}
+
+// MEDIA QURIES
+@media (max-width: 1023.99px) {}
+@media (max-width: 767.99px) {
+    .footer {
+
+        .footer-container {
+            grid-template-columns: repeat(2, 1fr);
+
+            .footer-container-box {
+                text-align: center;
+                margin-inline: auto;
+
+                .footer-container-box-image {
+                    max-width: 16rem;
+                }
+            }
+        }
+
+        .footer-credit {
+            letter-spacing: normal;
+        }
+    }
+}
+@media (max-width: 424.99px) {
+    .footer {
+
+        .footer-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .footer-credit {
+            font-size: 1.2rem;
+        }
+    }
+}
